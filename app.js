@@ -678,6 +678,237 @@ const SEED_LISTS = [
     "github": "https://github.com/awesomelistsio/awesome-open-data",
     "category": "Society",
     "slug": "awesome-open-data"
+  },
+  {
+    "name": "Awesome Drone Laws by Country",
+    "description": "A curated list of resources, databases, and official sources on drone laws, regulations, and UAV/UAS policies around the world.",
+    "github": "https://github.com/awesomelistsio/awesome-drone-laws-by-country",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-drone-laws-by-country"
+  },
+  {
+    "name": "Awesome Quantum Computing",
+    "description": "A curated list of awesome libraries, learning resources, frameworks, and tools for quantum computing.",
+    "github": "https://github.com/awesomelistsio/awesome-quantum-computing",
+    "category": "Quantum Computing",
+    "slug": "awesome-quantum-computing"
+  },
+  {
+    "name": "Awesome Solo Traveler",
+    "description": "A curated list of awesome resources, tools, blogs, communities, and platforms for solo travelers.",
+    "github": "https://github.com/awesomelistsio/awesome-solo-traveler",
+    "category": "Travel",
+    "slug": "awesome-solo-traveler"
+  },
+  {
+    "name": "Awesome Elon Musk",
+    "description": "A curated list of resources, projects, interviews, documentaries, articles, and communities related to Elon Musk.",
+    "github": "https://github.com/awesomelistsio/awesome-elon-musk",
+    "category": "Technology Giants",
+    "slug": "awesome-elon-musk"
+  },
+  {
+    "name": "Awesome Computational Linguistics",
+    "description": "A curated list of awesome resources, tools, datasets, papers, and libraries for computational linguistics and natural language processing (NLP).",
+    "github": "https://github.com/awesomelistsio/awesome-computational-linguistics",
+    "category": "Artificial Intelligence (AI)",
+    "slug": "awesome-computational-linguistics"
+  },
+  {
+    "name": "Awesome UI Components",
+    "description": "A curated list of awesome UI component libraries, frameworks, kits, and resources for building beautiful, reusable user interfaces.",
+    "github": "https://github.com/awesomelistsio/awesome-ui-components",
+    "category": "Design & UX",
+    "slug": "awesome-ui-components"
+  },
+  {
+    "name": "Awesome Substack",
+    "description": "A curated list of awesome tools, tips, guides, and resources for writers, publishers, and creators using Substack.",
+    "github": "https://github.com/awesomelistsio/awesome-substack",
+    "category": "Platforms",
+    "slug": "awesome-substack"
+  },
+  {
+    "name": "Awesome Medium",
+    "description": "A curated list of awesome tools, tips, extensions, and resources for writers, readers, and publishers on Medium.",
+    "github": "https://github.com/awesomelistsio/awesome-medium",
+    "category": "Platforms",
+    "slug": "awesome-medium"
+  },
+  {
+    "name": "Awesome WordPress Headless",
+    "description": "A curated list of resources, tools, frameworks, and guides for building headless WordPress websites.",
+    "github": "https://github.com/awesomelistsio/awesome-wordpress-headless/tree/main",
+    "category": "Frameworks",
+    "slug": "awesome-wordpress-headless"
+  },
+  {
+    "name": "Awesome Jekyll",
+    "description": "A curated list of awesome tools, themes, plugins, and resources for Jekyll.",
+    "github": "https://github.com/awesomelistsio/awesome-jekyll",
+    "category": "Frameworks",
+    "slug": "awesome-jekyll"
+  },
+  {
+    "name": "Awesome GitHub Pages",
+    "description": "A curated list of awesome resources, tools, templates, and tips for using GitHub Pages.",
+    "github": "https://github.com/awesomelistsio/awesome-github-pages",
+    "category": "Platforms",
+    "slug": "awesome-github-pages"
+  },
+  {
+    "name": "Awesome Static Website Services",
+    "description": "A curated list of awesome services, platforms, and tools for building, hosting, and managing static websites.",
+    "github": "https://github.com/awesomelistsio/awesome-static-website-services",
+    "category": "Platforms",
+    "slug": "awesome-static-website-services"
+  },
+  {
+    "name": "Awesome CMS",
+    "description": "A curated list of awesome content management systems (CMS), libraries, tools, platforms, and resources.",
+    "github": "https://github.com/awesomelistsio/awesome-cms",
+    "category": "Frameworks",
+    "slug": "awesome-cms"
+  },
+  {
+    "name": "Awesome Headless CMS",
+    "description": "A curated list of awesome Headless CMS platforms, tools, resources, and guides for decoupled content management.",
+    "github": "https://github.com/awesomelistsio/awesome-headless-cms",
+    "category": "Frameworks",
+    "slug": "awesome-headless-cms"
+  },
+  {
+    "name": "Awesome JAMstack",
+    "description": "A curated list of awesome tools, resources, services, and guides for building websites and apps with the JAMstack architecture.",
+    "github": "https://github.com/awesomelistsio/awesome-jamstack",
+    "category": "Frameworks",
+    "slug": "awesome-jamstack"
+  },
+  {
+    "name": "Awesome Serverless",
+    "description": "A curated list of awesome services, frameworks, tools, and resources for building serverless applications.",
+    "github": "https://github.com/awesomelistsio/awesome-serverless",
+    "category": "Cloud Platforms",
+    "slug": "awesome-serverless"
+  },
+  {
+    "name": "Awesome Self Publishing",
+    "description": "A curated list of awesome tools, resources, communities, and platforms for self-publishing authors.",
+    "github": "https://github.com/awesomelistsio/awesome-self-publishing",
+    "category": "Blogging",
+    "slug": "awesome-self-publishing"
+  },
+  {
+    "name": "Awesome Web Design",
+    "description": "A curated list of awesome resources, tools, books, and inspiration for web designers.",
+    "github": "https://github.com/awesomelistsio/awesome-web-design",
+    "category": "Design & UX",
+    "slug": "awesome-web-design"
+  },
+  {
+    "name": "Awesome UX",
+    "description": "A curated list of awesome resources, tools, and guides for improving User Experience (UX) design.",
+    "github": "https://github.com/awesomelistsio/awesome-ux",
+    "category": "Design & UX",
+    "slug": "awesome-ux"
+  },
+  {
+    "name": "Awesome Icons",
+    "description": "A curated list of awesome icon packs, libraries, tools, and resources for web and app design.",
+    "github": "https://github.com/awesomelistsio/awesome-icons",
+    "category": "Design & UX",
+    "slug": "awesome-icons"
+  },
+  {
+    "name": "Awesome Figma",
+    "description": "A curated list of awesome Figma plugins, tools, templates, resources, and community links to boost your design workflow.",
+    "github": "https://github.com/awesomelistsio/awesome-figma",
+    "category": "Design & UX",
+    "slug": "awesome-figma"
+  },
+  {
+    "name": "Awesome Design",
+    "description": "A curated list of awesome resources, tools, frameworks, and communities for all things design\u2014UI, UX, product, interaction, and beyond.",
+    "github": "https://github.com/awesomelistsio/awesome-design",
+    "category": "Design & UX",
+    "slug": "awesome-design"
+  },
+  {
+    "name": "Awesome Tailwind CSS",
+    "description": "A curated list of awesome tools, components, templates, and resources for Tailwind CSS.",
+    "github": "https://github.com/awesomelistsio/awesome-tailwindcss",
+    "category": "Frameworks",
+    "slug": "awesome-tailwind-css"
+  },
+  {
+    "name": "Awesome HTML5",
+    "description": "A curated list of awesome HTML5 resources, tools, frameworks, and learning materials.",
+    "github": "https://github.com/awesomelistsio/awesome-html5",
+    "category": "Programming",
+    "slug": "awesome-html5"
+  },
+  {
+    "name": "Awesome Dribbble",
+    "description": "A curated list of awesome tools, tips, profiles, and resources for designers using Dribbble.",
+    "github": "https://github.com/awesomelistsio/awesome-dribbble",
+    "category": "Design & UX",
+    "slug": "awesome-dribbble"
+  },
+  {
+    "name": "Awesome CSS",
+    "description": "A curated list of awesome CSS frameworks, libraries, tools, resources, and inspiration.",
+    "github": "https://github.com/awesomelistsio/awesome-css",
+    "category": "Programming",
+    "slug": "awesome-css"
+  },
+  {
+    "name": "Awesome CodePen",
+    "description": "A curated list of awesome CodePen demos, collections, resources, and inspiration for front-end developers and designers.",
+    "github": "https://github.com/awesomelistsio/awesome-codepen",
+    "category": "Design & UX",
+    "slug": "awesome-codepen"
+  },
+  {
+    "name": "Awesome Infrastructure as Code",
+    "description": "A curated list of awesome tools, frameworks, practices, and resources for Infrastructure as Code (IaC).",
+    "github": "https://github.com/awesomelistsio/awesome-iac",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-infrastructure-as-code"
+  },
+  {
+    "name": "Awesome Terraform",
+    "description": "A curated list of awesome Terraform modules, tools, resources, and learning material.",
+    "github": "https://github.com/awesomelistsio/awesome-terraform",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-terraform"
+  },
+  {
+    "name": "Awesome AWS",
+    "description": "A curated list of awesome tools, guides, open-source libraries, and educational resources for Amazon Web Services (AWS).",
+    "github": "https://github.com/awesomelistsio/awesome-aws",
+    "category": "Cloud Platforms",
+    "slug": "awesome-aws"
+  },
+  {
+    "name": "Awesome Amazon",
+    "description": "A curated list of tools, APIs, extensions, guides, and platforms related to Amazon and its ecosystem.",
+    "github": "https://github.com/awesomelistsio/awesome-amazon",
+    "category": "Platforms",
+    "slug": "awesome-amazon"
+  },
+  {
+    "name": "Awesome Shopify",
+    "description": "A curated list of high-quality resources, tools, apps, and guides for building, customizing, and managing Shopify stores.",
+    "github": "https://github.com/awesomelistsio/awesome-shopify",
+    "category": "Platforms",
+    "slug": "awesome-shopify"
+  },
+  {
+    "name": "Awesome X",
+    "description": "A curated list of high-quality tools, libraries, resources, and guides for working with X (formerly Twitter).",
+    "github": "https://github.com/awesomelistsio/awesome-x",
+    "category": "Platforms",
+    "slug": "awesome-x"
   }
 ];
 
