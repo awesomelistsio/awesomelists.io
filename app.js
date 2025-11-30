@@ -909,6 +909,132 @@ const SEED_LISTS = [
     "github": "https://github.com/awesomelistsio/awesome-x",
     "category": "Platforms",
     "slug": "awesome-x"
+  },
+  {
+    "name": "Awesome AI Benchmarks & Evaluation",
+    "description": "Evaluation tools, benchmark datasets, leaderboards, frameworks, and resources for assessing model performance across reasoning, safety, robustness, multimodality, RAG, LLMs, and traditional ML tasks.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-benchmarks-evaluation",
+    "category": "AI",
+    "slug": "awesome-ai-benchmarks-evaluation"
+  },
+  {
+    "name": "Awesome AI Security",
+    "description": "Tools, frameworks, benchmarks, research, and resources focused on AI security — including adversarial attacks, model robustness, data poisoning, red teaming, model extraction, jailbreak defense, secure inference, and privacy-preserving AI.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-security",
+    "category": "AI",
+    "slug": "awesome-ai-security"
+  },
+  {
+    "name": "Awesome UAV & Drone AI",
+    "description": "AI, machine learning, computer vision, and autonomy resources for UAVs, drones, quadcopters, and aerial robotics — including navigation, SLAM, flight control, path planning, simulation, and perception.",
+    "github": "https://github.com/awesomelistsio/awesome-uav-drone-ai",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-uav-drone-ai"
+  },
+  {
+    "name": "Awesome Multimodal AI",
+    "description": "Models, tools, libraries, datasets, and resources for multimodal AI — systems that process and reason across multiple modalities such as text, image, audio, video, and sensor data.",
+    "github": "https://github.com/awesomelistsio/awesome-multimodal-ai",
+    "category": "AI",
+    "slug": "awesome-multimodal-ai"
+  },
+  {
+    "name": "Awesome AI Research Tools",
+    "description": "Tools, platforms, libraries, and resources to support AI and ML research — including experimentation, literature search, dataset exploration, evaluation, visualization, and reproducibility.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-research-tools",
+    "category": "AI",
+    "slug": "awesome-ai-research-tools"
+  },
+  {
+    "name": "Awesome AI Safety & Alignment",
+    "description": "Research, frameworks, tools, evaluations, and resources focused on AI alignment, safety, robustness, model governance, red-teaming, and responsible development.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-safety-alignment",
+    "category": "AI",
+    "slug": "awesome-ai-safety-alignment"
+  },
+  {
+    "name": "Awesome Synthetic Data",
+    "description": "Tools, models, datasets, and resources for generating, evaluating, and applying synthetic data — artificial data used to augment, protect, or replace real-world datasets for AI, analytics, and research.",
+    "github": "https://github.com/awesomelistsio/awesome-synthetic-data",
+    "category": "AI",
+    "slug": "awesome-synthetic-data"
+  },
+  {
+    "name": "Awesome RAG",
+    "description": "Tools, frameworks, and resources for Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge retrieval for more accurate, grounded outputs.",
+    "github": "https://github.com/awesomelistsio/awesome-rag",
+    "category": "AI",
+    "slug": "awesome-rag"
+  },
+  {
+    "name": "Awesome AI Agents",
+    "description": "Frameworks, tools, platforms, and resources for building AI agents — autonomous or semi-autonomous systems with planning, memory, tool use, and multi-step reasoning.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-agents",
+    "category": "AI",
+    "slug": "awesome-ai-agents"
+  },
+  {
+    "name": "Awesome Hugging Face",
+    "description": "Libraries, models, datasets, tutorials, and tools from and for the Hugging Face ecosystem.",
+    "github": "https://github.com/awesomelistsio/awesome-hugging-face",
+    "category": "AI",
+    "slug": "awesome-hugging-face"
+  },
+  {
+    "name": "Awesome VTOL Drones",
+    "description": "Resources, research, and companies related to Vertical Take-Off and Landing (VTOL) drones.",
+    "github": "https://github.com/awesomelistsio/awesome-vtol-drones",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-vtol-drones"
+  },
+  {
+    "name": "Awesome SQLite",
+    "description": "Tools, extensions, utilities, clients, libraries, and resources for SQLite — the world’s most widely deployed embedded database.",
+    "github": "https://github.com/awesomelistsio/awesome-sqlite",
+    "category": "Databases",
+    "slug": "awesome-sqlite"
+  },
+  {
+    "name": "Awesome Redis",
+    "description": "Tools, libraries, extensions, modules, GUI clients, and resources for Redis — the in-memory data store used for caching, vector search, pub/sub, streams, AI workloads, and real-time systems.",
+    "github": "https://github.com/awesomelistsio/awesome-redis",
+    "category": "Databases",
+    "slug": "awesome-redis"
+  },
+  {
+    "name": "Awesome Next.js",
+    "description": "Frameworks, libraries, templates, tools, starters, components, and resources for building with Next.js — including App Router, server components, API routes, full-stack patterns, deployment, and performance optimization.",
+    "github": "https://github.com/awesomelistsio/awesome-next.js",
+    "category": "Frameworks",
+    "slug": "awesome-next.js"
+  },
+  {
+    "name": "Awesome SQL",
+    "description": "SQL databases, tools, clients, query builders, learning resources, extensions, and utilities for relational database development and data work.",
+    "github": "https://github.com/awesomelistsio/awesome-sql",
+    "category": "Databases",
+    "slug": "awesome-sql"
+  },
+  {
+    "name": "Awesome Angular",
+    "description": "Libraries, tools, resources, component kits, templates, and learning materials for Angular, the TypeScript-based web application framework.",
+    "github": "https://github.com/awesomelistsio/awesome-angular",
+    "category": "Frameworks",
+    "slug": "awesome-angular"
+  },
+  {
+    "name": "Awesome Google Cloud Platform (GCP)",
+    "description": "Tools, SDKs, libraries, utilities, learning resources, templates, and ecosystem components for Google Cloud Platform — Compute, Networking, Storage, Big Data, AI/ML, IAM, Serverless, and DevOps.",
+    "github": "https://github.com/awesomelistsio/awesome-google-cloud-platform",
+    "category": "Cloud Platforms",
+    "slug": "awesome-google-cloud-platform"
+  },
+  {
+    "name": "Awesome Docker",
+    "description": "Docker tools, images, utilities, learning resources, best practices, and ecosystem components — including containerization, orchestration, CI/CD, optimization, and security.",
+    "github": "https://github.com/awesomelistsio/awesome-docker",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-docker"
   }
 ];
 
