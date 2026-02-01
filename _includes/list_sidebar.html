@@ -1,0 +1,93 @@
+<aside class="space-y-6">
+  <!-- Actions -->
+  <div class="rounded-2xl bg-white/80 ring-1 ring-slate-200 p-5 shadow-card dark:bg-slate-900/40 dark:ring-slate-800">
+    <div class="flex items-start justify-between gap-3">
+      <h3 class="text-sm font-semibold tracking-tight">This list</h3>
+
+      {% if page.category %}
+        <span class="inline-flex items-center rounded-full bg-emerald-600/10 px-2 py-0.5 text-xs text-emerald-800 ring-1 ring-emerald-700/20 dark:text-emerald-200">
+          {{ page.category }}
+        </span>
+      {% endif %}
+    </div>
+
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+      Live-fetched from GitHub and cached for faster reloads.
+    </p>
+
+    <div class="mt-4 flex flex-wrap gap-2">
+      {% if page.github %}
+        <a class="btn btn-github" href="{{ page.github }}" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      {% endif %}
+
+      <button class="btn btn-secondary" id="btnCopyLink" type="button">
+        Copy link
+      </button>
+
+      <button class="btn btn-secondary" id="btnShare" type="button">
+        Share
+      </button>
+
+      <button class="btn btn-secondary" id="btnRefresh" type="button" title="Refresh the cached README from GitHub">
+        Refresh
+      </button>
+    </div>
+
+    <!-- Status -->
+    <div class="mt-4 space-y-1 text-xs text-slate-500 dark:text-slate-400">
+      <div>
+        Status: <span id="listFetchStatus">Loading…</span>
+      </div>
+      <div>
+        Last fetched: <span id="listFetchedAt">—</span>
+      </div>
+      <div id="listCacheHint" class="hidden">
+        Showing cached content due to a fetch error.
+      </div>
+    </div>
+  </div>
+
+  <!-- Keep exploring -->
+  <div class="rounded-2xl bg-white/80 ring-1 ring-slate-200 p-5 shadow-card dark:bg-slate-900/40 dark:ring-slate-800">
+    <h3 class="text-sm font-semibold tracking-tight">Keep exploring</h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+      Jump back to discovery, or browse what you’ve saved.
+    </p>
+
+    <div class="mt-4 flex flex-col gap-2 text-sm">
+      <a class="hover:underline" href="{{ '/' | relative_url }}">Browse all lists</a>
+      <a class="hover:underline" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+      <a class="hover:underline" href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+    </div>
+  </div>
+
+  <!-- Related lists (populated by JS) -->
+  <div class="rounded-2xl bg-white/80 ring-1 ring-slate-200 p-5 shadow-card dark:bg-slate-900/40 dark:ring-slate-800">
+    <div class="flex items-center justify-between gap-3">
+      <h3 class="text-sm font-semibold tracking-tight">Related lists</h3>
+      <a class="text-xs text-emerald-700 hover:underline dark:text-emerald-300" href="{{ '/' | relative_url }}">All</a>
+    </div>
+
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+      Similar lists based on category.
+    </p>
+
+    <div id="relatedLists" class="mt-4 space-y-3">
+      <div class="text-xs text-slate-500 dark:text-slate-400">
+        Loading related lists…
+      </div>
+    </div>
+  </div>
+
+  <!-- Recently viewed (populated by JS) -->
+  <div class="rounded-2xl bg-white/80 ring-1 ring-slate-200 p-5 shadow-card dark:bg-slate-900/40 dark:ring-slate-800">
+    <h3 class="text-sm font-semibold tracking-tight">Recently viewed</h3>
+    <div id="recentLists" class="mt-4 space-y-3">
+      <div class="text-xs text-slate-500 dark:text-slate-400">
+        You haven’t opened any other lists yet.
+      </div>
+    </div>
+  </div>
+</aside>
