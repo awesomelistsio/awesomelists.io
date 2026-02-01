@@ -6,15 +6,3 @@
 [![Stripe](https://srv-cdn.himpfen.io/badges/stripe/stripe-flat.svg)](https://tinyurl.com/e8ymxdw3) &nbsp; 
 [![X](https://srv-cdn.himpfen.io/badges/twitter/twitter-flat.svg)](https://x.com/ListsAwesome) &nbsp; 
 [![Facebook](https://srv-cdn.himpfen.io/badges/facebook-pages/facebook-pages-flat.svg)](https://www.facebook.com/awesomelists)
-
-
-## Jekyll version
-
-This repo also includes a Jekyll site scaffold (for GitHub Pages) with a `/blog/` section.
-
-Local dev:
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
