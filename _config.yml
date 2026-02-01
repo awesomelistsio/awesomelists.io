@@ -11,4 +11,4 @@ plugins:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:title/
