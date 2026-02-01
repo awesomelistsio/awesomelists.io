@@ -711,7 +711,7 @@ const SEED_LISTS = [
     "name": "Awesome Computational Linguistics",
     "description": "A curated list of awesome resources, tools, datasets, papers, and libraries for computational linguistics and natural language processing (NLP).",
     "github": "https://github.com/awesomelistsio/awesome-computational-linguistics",
-    "category": "Artificial Intelligence (AI)",
+    "category": "AI",
     "slug": "awesome-computational-linguistics"
   },
   {
@@ -738,7 +738,7 @@ const SEED_LISTS = [
   {
     "name": "Awesome WordPress Headless",
     "description": "A curated list of resources, tools, frameworks, and guides for building headless WordPress websites.",
-    "github": "https://github.com/awesomelistsio/awesome-wordpress-headless/tree/main",
+    "github": "https://github.com/awesomelistsio/awesome-wordpress-headless",
     "category": "Frameworks",
     "slug": "awesome-wordpress-headless"
   },
@@ -1040,7 +1040,7 @@ const SEED_LISTS = [
     "name": "Awesome AutoML",
     "description": "A curated list of frameworks, platforms, tools, research, and learning resources for Automated Machine Learning (AutoML).",
     "github": "https://github.com/awesomelistsio/awesome-automl",
-    "category": "Artificial Intelligence (AI)",
+    "category": "AI",
     "slug": "awesome-automl"
   },
 
@@ -1533,14 +1533,14 @@ function render() {
           <span class="badge">${l.category}</span>
         </div>
         <p class="mt-3 text-sm text-slate-700 leading-relaxed dark:text-slate-300">${l.description}</p>
-        <div class="mt-5 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <button class="btn fav-btn ${isFav ? 'ring-1 ring-emerald-200' : ''}" data-slug="${l.slug}" aria-pressed="${isFav}">
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="btn btn-secondary fav-btn ${isFav ? 'ring-1 ring-emerald-200' : ''}" data-slug="${l.slug}" aria-pressed="${isFav}">
               ${isFav ? '<svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/></svg>' :
                          '<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15 9 22 9 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9 9 9 12 2"/></svg>'}
               <span>${isFav ? 'Favourited' : 'Favourite'}</span>
             </button>
-            <button class="btn btn-ghost share-btn" data-title="${encodeURIComponent(l.name)}" data-slug="${l.slug}">
+            <button class="btn btn-secondary share-btn" data-title="${encodeURIComponent(l.name)}" data-slug="${l.slug}">
               <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51L8.59 10.49"/></svg>
               <span>Share</span>
             </button>
@@ -1549,7 +1549,7 @@ function render() {
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v7h-7"/><path d="M3 10V3h7"/><path d="M3 21h7v-7"/></svg>
             <span>Open</span>
           </a>
-          <a class="btn btn-ghost" href="${l.github}" target="_blank" rel="noreferrer" title="Open on GitHub">
+          <a class="btn btn-github" href="${l.github}" target="_blank" rel="noreferrer" title="Open on GitHub">
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 1.7-.2 3.5-.8 3.5-4a3.1 3.1 0 0 0-.9-2.1 2.9 2.9 0 0 0-.1-2.1s-.7-.2-2.2.9a7.6 7.6 0 0 0-4 0c-1.5-1.1-2.2-.9-2.2-.9a2.9 2.9 0 0 0-.1 2.1A3.1 3.1 0 0 0 6 11.5c0 3.2 1.8 3.8 3.5 4-.3.3-.5.6-.5 1.2V21"/></svg>
             <span>GitHub</span>
           </a>

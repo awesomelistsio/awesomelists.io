@@ -1,1 +1,54 @@
 .card{background:#f3f4f6;border:1px solid rgba(15,23,42,.08);border-radius:.75rem;box-shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);transition:box-shadow .2s,transform .2s}.card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);transform:translateY(-1px)}.badge{border:1px solid rgba(39,174,96,.35);color:#1f7a3f;background:rgba(39,174,96,.1);padding:.125rem .5rem;border-radius:9999px;font-size:.75rem}.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .6rem;border-radius:.6rem;border:1px solid rgba(15,23,42,.12);background:#fff;font-size:.9rem}.btn:hover{background:#f8fafc}.btn-ghost{background:transparent}.btn-primary{background:#27AE60;color:#fff;border-color:#27AE60}.btn-primary:hover{filter:brightness(.95)}.dark .card{background:#1e293b;border-color:rgba(148,163,184,.15);box-shadow:none}.dark .badge{border-color:rgba(52,211,153,.3);color:rgb(167 243 208);background:rgba(16,185,129,.15)}.dark .btn{background:#0f172a;color:#e2e8f0;border-color:rgba(148,163,184,.25)}.dark .btn:hover{background:#0b1220}.dark .btn-primary{background:#27AE60;color:#fff;border-color:#27AE60}
+
+/* ------------------------------
+   Buttons (Card actions)
+   ------------------------------ */
+
+/* Shared button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  white-space: nowrap;
+  border: 1px solid rgba(148, 163, 184, 0.6); /* slate-300-ish */
+}
+
+/* Secondary action */
+.btn-secondary {
+  background: rgba(255,255,255,0.9);
+  color: #0f172a;
+}
+.dark .btn-secondary {
+  background: rgba(30,41,59,0.5);
+  border-color: rgba(51,65,85,1);
+  color: #e2e8f0;
+}
+.btn-secondary:hover { transform: translateY(-1px); }
+
+/* Primary action */
+.btn-primary {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: rgb(5, 150, 105);
+  font-weight: 600;
+}
+.dark .btn-primary {
+  color: #6ee7b7;
+  border-color: rgba(110, 231, 183, 0.35);
+}
+
+/* GitHub brand action */
+.btn-github {
+  background: #111827;        /* slate-900 */
+  border-color: #111827;
+  color: #fff;
+}
+.btn-github:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
