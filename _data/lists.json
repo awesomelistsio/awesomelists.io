@@ -1,5 +1,4 @@
-// ----- Awesome Lists List -----
-const SEED_LISTS = [
+[
   {
     "name": "Awesome AI",
     "description": "A general list of resources, libraries, and tools for artificial intelligence.",
@@ -828,7 +827,7 @@ const SEED_LISTS = [
   },
   {
     "name": "Awesome Design",
-    "description": "A curated list of awesome resources, tools, frameworks, and communities for all things design\u2014UI, UX, product, interaction, and beyond.",
+    "description": "A curated list of awesome resources, tools, frameworks, and communities for all things design—UI, UX, product, interaction, and beyond.",
     "github": "https://github.com/awesomelistsio/awesome-design",
     "category": "Design & UX",
     "slug": "awesome-design"
@@ -909,187 +908,467 @@ const SEED_LISTS = [
     "github": "https://github.com/awesomelistsio/awesome-x",
     "category": "Platforms",
     "slug": "awesome-x"
+  },
+  {
+    "name": "Awesome AI Benchmarks & Evaluation",
+    "description": "Evaluation tools, benchmark datasets, leaderboards, frameworks, and resources for assessing model performance across reasoning, safety, robustness, multimodality, RAG, LLMs, and traditional ML tasks.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-benchmarks-evaluation",
+    "category": "AI",
+    "slug": "awesome-ai-benchmarks-evaluation"
+  },
+  {
+    "name": "Awesome AI Security",
+    "description": "Tools, frameworks, benchmarks, research, and resources focused on AI security — including adversarial attacks, model robustness, data poisoning, red teaming, model extraction, jailbreak defense, secure inference, and privacy-preserving AI.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-security",
+    "category": "AI",
+    "slug": "awesome-ai-security"
+  },
+  {
+    "name": "Awesome UAV & Drone AI",
+    "description": "AI, machine learning, computer vision, and autonomy resources for UAVs, drones, quadcopters, and aerial robotics — including navigation, SLAM, flight control, path planning, simulation, and perception.",
+    "github": "https://github.com/awesomelistsio/awesome-uav-drone-ai",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-uav-drone-ai"
+  },
+  {
+    "name": "Awesome Multimodal AI",
+    "description": "Models, tools, libraries, datasets, and resources for multimodal AI — systems that process and reason across multiple modalities such as text, image, audio, video, and sensor data.",
+    "github": "https://github.com/awesomelistsio/awesome-multimodal-ai",
+    "category": "AI",
+    "slug": "awesome-multimodal-ai"
+  },
+  {
+    "name": "Awesome AI Research Tools",
+    "description": "Tools, platforms, libraries, and resources to support AI and ML research — including experimentation, literature search, dataset exploration, evaluation, visualization, and reproducibility.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-research-tools",
+    "category": "AI",
+    "slug": "awesome-ai-research-tools"
+  },
+  {
+    "name": "Awesome AI Safety & Alignment",
+    "description": "Research, frameworks, tools, evaluations, and resources focused on AI alignment, safety, robustness, model governance, red-teaming, and responsible development.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-safety-alignment",
+    "category": "AI",
+    "slug": "awesome-ai-safety-alignment"
+  },
+  {
+    "name": "Awesome Synthetic Data",
+    "description": "Tools, models, datasets, and resources for generating, evaluating, and applying synthetic data — artificial data used to augment, protect, or replace real-world datasets for AI, analytics, and research.",
+    "github": "https://github.com/awesomelistsio/awesome-synthetic-data",
+    "category": "AI",
+    "slug": "awesome-synthetic-data"
+  },
+  {
+    "name": "Awesome RAG",
+    "description": "Tools, frameworks, and resources for Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge retrieval for more accurate, grounded outputs.",
+    "github": "https://github.com/awesomelistsio/awesome-rag",
+    "category": "AI",
+    "slug": "awesome-rag"
+  },
+  {
+    "name": "Awesome AI Agents",
+    "description": "Frameworks, tools, platforms, and resources for building AI agents — autonomous or semi-autonomous systems with planning, memory, tool use, and multi-step reasoning.",
+    "github": "https://github.com/awesomelistsio/awesome-ai-agents",
+    "category": "AI",
+    "slug": "awesome-ai-agents"
+  },
+  {
+    "name": "Awesome Hugging Face",
+    "description": "Libraries, models, datasets, tutorials, and tools from and for the Hugging Face ecosystem.",
+    "github": "https://github.com/awesomelistsio/awesome-hugging-face",
+    "category": "AI",
+    "slug": "awesome-hugging-face"
+  },
+  {
+    "name": "Awesome VTOL Drones",
+    "description": "Resources, research, and companies related to Vertical Take-Off and Landing (VTOL) drones.",
+    "github": "https://github.com/awesomelistsio/awesome-vtol-drones",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-vtol-drones"
+  },
+  {
+    "name": "Awesome SQLite",
+    "description": "Tools, extensions, utilities, clients, libraries, and resources for SQLite — the world’s most widely deployed embedded database.",
+    "github": "https://github.com/awesomelistsio/awesome-sqlite",
+    "category": "Databases",
+    "slug": "awesome-sqlite"
+  },
+  {
+    "name": "Awesome Redis",
+    "description": "Tools, libraries, extensions, modules, GUI clients, and resources for Redis — the in-memory data store used for caching, vector search, pub/sub, streams, AI workloads, and real-time systems.",
+    "github": "https://github.com/awesomelistsio/awesome-redis",
+    "category": "Databases",
+    "slug": "awesome-redis"
+  },
+  {
+    "name": "Awesome Next.js",
+    "description": "Frameworks, libraries, templates, tools, starters, components, and resources for building with Next.js — including App Router, server components, API routes, full-stack patterns, deployment, and performance optimization.",
+    "github": "https://github.com/awesomelistsio/awesome-next.js",
+    "category": "Frameworks",
+    "slug": "awesome-next.js"
+  },
+  {
+    "name": "Awesome SQL",
+    "description": "SQL databases, tools, clients, query builders, learning resources, extensions, and utilities for relational database development and data work.",
+    "github": "https://github.com/awesomelistsio/awesome-sql",
+    "category": "Databases",
+    "slug": "awesome-sql"
+  },
+  {
+    "name": "Awesome Angular",
+    "description": "Libraries, tools, resources, component kits, templates, and learning materials for Angular, the TypeScript-based web application framework.",
+    "github": "https://github.com/awesomelistsio/awesome-angular",
+    "category": "Frameworks",
+    "slug": "awesome-angular"
+  },
+  {
+    "name": "Awesome Google Cloud Platform (GCP)",
+    "description": "Tools, SDKs, libraries, utilities, learning resources, templates, and ecosystem components for Google Cloud Platform — Compute, Networking, Storage, Big Data, AI/ML, IAM, Serverless, and DevOps.",
+    "github": "https://github.com/awesomelistsio/awesome-google-cloud-platform",
+    "category": "Cloud Platforms",
+    "slug": "awesome-google-cloud-platform"
+  },
+  {
+    "name": "Awesome Docker",
+    "description": "Docker tools, images, utilities, learning resources, best practices, and ecosystem components — including containerization, orchestration, CI/CD, optimization, and security.",
+    "github": "https://github.com/awesomelistsio/awesome-docker",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-docker"
+  },
+  {
+    "name": "Awesome AutoML",
+    "description": "A curated list of frameworks, platforms, tools, research, and learning resources for Automated Machine Learning (AutoML).",
+    "github": "https://github.com/awesomelistsio/awesome-automl",
+    "category": "Artificial Intelligence (AI)",
+    "slug": "awesome-automl"
+  },
+  {
+    "name": "Awesome Economics",
+    "description": "A curated list of datasets, tools, models, institutions, and learning resources for economics.",
+    "github": "https://github.com/awesomelistsio/awesome-economics",
+    "category": "Business & Economics",
+    "slug": "awesome-economics"
+  },
+  {
+    "name": "Awesome Finance",
+    "description": "A curated list of tools, platforms, datasets, libraries, and learning materials for finance.",
+    "github": "https://github.com/awesomelistsio/awesome-finance",
+    "category": "Business & Economics",
+    "slug": "awesome-finance"
+  },
+  {
+    "name": "Awesome FinTech",
+    "description": "A curated list of platforms, APIs, tools, frameworks, standards, and learning resources for Financial Technology.",
+    "github": "https://github.com/awesomelistsio/awesome-fintech",
+    "category": "Business & Economics",
+    "slug": "awesome-fintech"
+  },
+  {
+    "name": "Awesome Payments",
+    "description": "A curated list of platforms, APIs, tools, standards, and learning resources for payments.",
+    "github": "https://github.com/awesomelistsio/awesome-payments",
+    "category": "Business & Economics",
+    "slug": "awesome-payments"
+  },
+  {
+    "name": "Awesome SaaS",
+    "description": "A curated list of tools, frameworks, APIs, platforms, and learning resources for building and operating SaaS products.",
+    "github": "https://github.com/awesomelistsio/awesome-saas",
+    "category": "Business & Economics",
+    "slug": "awesome-saas"
+  },
+  {
+    "name": "Awesome Cloud",
+    "description": "A curated list of cloud platforms, tools, SDKs, infrastructure services, and learning resources.",
+    "github": "https://github.com/awesomelistsio/awesome-cloud",
+    "category": "Cloud Platforms",
+    "slug": "awesome-cloud"
+  },
+  {
+    "name": "Awesome DigitalOcean",
+    "description": "A curated list of tools, services, tutorials, and integrations for DigitalOcean.",
+    "github": "https://github.com/awesomelistsio/awesome-digitalocean",
+    "category": "Cloud Platforms",
+    "slug": "awesome-digitalocean"
+  },
+  {
+    "name": "Awesome Google Cloud Platform",
+    "description": "A curated list of tools, SDKs, libraries, and learning resources for Google Cloud Platform.",
+    "github": "https://github.com/awesomelistsio/awesome-google-cloud-platform",
+    "category": "Cloud Platforms",
+    "slug": "awesome-google-cloud-platform"
+  },
+  {
+    "name": "Awesome Heroku",
+    "description": "A curated list of platforms, tools, add-ons, workflows, and learning resources for Heroku.",
+    "github": "https://github.com/awesomelistsio/awesome-heroku",
+    "category": "Cloud Platforms",
+    "slug": "awesome-heroku"
+  },
+  {
+    "name": "Awesome Blockchain",
+    "description": "A curated list of platforms, protocols, tools, frameworks, and learning resources for blockchain technology.",
+    "github": "https://github.com/awesomelistsio/awesome-blockchain/tree/main",
+    "category": "Cryptocurrency",
+    "slug": "awesome-blockchain"
+  },
+  {
+    "name": "Awesome Web3",
+    "description": "A curated list of platforms, protocols, tools, and learning resources for Web3 and the decentralized web.",
+    "github": "https://github.com/awesomelistsio/awesome-web3",
+    "category": "Cryptocurrency",
+    "slug": "awesome-web3"
+  },
+  {
+    "name": "Awesome Business Intelligence",
+    "description": "A curated list of tools and learning resources for Business Intelligence.",
+    "github": "https://github.com/awesomelistsio/awesome-business-intelligence",
+    "category": "Data & Analytics",
+    "slug": "awesome-business-intelligence"
+  },
+  {
+    "name": "Awesome Data Analytics",
+    "description": "A curated list of tools, platforms, and frameworks for data analytics.",
+    "github": "https://github.com/awesomelistsio/awesome-data-analytics",
+    "category": "Data & Analytics",
+    "slug": "awesome-data-analytics"
+  },
+  {
+    "name": "Awesome Data Engineering",
+    "description": "A curated list of tools, platforms, and learning resources for data engineering.",
+    "github": "https://github.com/awesomelistsio/awesome-data-engineering",
+    "category": "Data & Analytics",
+    "slug": "awesome-data-engineering"
+  },
+  {
+    "name": "Awesome Data Science",
+    "description": "A curated list of tools, datasets, workflows, and learning resources for data science.",
+    "github": "https://github.com/awesomelistsio/awesome-data-science",
+    "category": "Data & Analytics",
+    "slug": "awesome-data-science"
+  },
+  {
+    "name": "Awesome Big Data",
+    "description": "A curated list of frameworks, platforms, and tools for big data systems.",
+    "github": "https://github.com/awesomelistsio/awesome-big-data",
+    "category": "Data & Analytics",
+    "slug": "awesome-big-data"
+  },
+  {
+    "name": "Awesome SQL",
+    "description": "A curated list of SQL databases, tools, clients, and learning resources.",
+    "github": "https://github.com/awesomelistsio/awesome-sql",
+    "category": "Databases",
+    "slug": "awesome-sql"
+  },
+  {
+    "name": "Awesome SQLite",
+    "description": "A curated list of tools and resources for SQLite.",
+    "github": "https://github.com/awesomelistsio/awesome-sqlite",
+    "category": "Databases",
+    "slug": "awesome-sqlite"
+  },
+  {
+    "name": "Awesome Redis",
+    "description": "A curated list of tools, libraries, and resources for Redis.",
+    "github": "https://github.com/awesomelistsio/awesome-redis",
+    "category": "Databases",
+    "slug": "awesome-redis"
+  },
+  {
+    "name": "Awesome Web3",
+    "description": "A curated list of platforms, protocols, and tools for decentralized applications and infrastructure.",
+    "github": "https://github.com/awesomelistsio/awesome-web3",
+    "category": "Decentralized Systems",
+    "slug": "awesome-web3"
+  },
+  {
+    "name": "Awesome Blockchain",
+    "description": "A curated list of distributed ledger and smart contract resources.",
+    "github": "https://github.com/awesomelistsio/awesome-blockchain/tree/main",
+    "category": "Decentralized Systems",
+    "slug": "awesome-blockchain"
+  },
+  {
+    "name": "Awesome CI/CD",
+    "description": "A curated list of tools and practices for Continuous Integration and Delivery.",
+    "github": "https://github.com/awesomelistsio/awesome-cicd",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-cicd"
+  },
+  {
+    "name": "Awesome Docker",
+    "description": "A curated list of Docker tools, images, workflows, and learning resources.",
+    "github": "https://github.com/awesomelistsio/awesome-docker",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-docker"
+  },
+  {
+    "name": "Awesome GitLab",
+    "description": "A curated list of tools and workflows for GitLab and DevSecOps.",
+    "github": "https://github.com/awesomelistsio/awesome-gitlab",
+    "category": "DevOps and CI/CD",
+    "slug": "awesome-gitlab"
+  },
+  {
+    "name": "Awesome UAV Autonomy",
+    "description": "A curated list of frameworks, algorithms, datasets, and autonomy stacks for UAV systems.",
+    "github": "https://github.com/awesomelistsio/awesome-uav-autonomy",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-uav-autonomy"
+  },
+  {
+    "name": "Awesome Drone Photography & Cinematography",
+    "description": "A curated list of tools, techniques, and workflows for drone photography and cinematatography.",
+    "github": "https://github.com/awesomelistsio/awesome-drone-photography-cinematography",
+    "category": "Emerging Tech: Drones & IoT",
+    "slug": "awesome-drone-photography-cinematography"
+  },
+  {
+    "name": "Awesome Audio Engineering",
+    "description": "A curated list of tools, workflows, and learning resources for audio engineering.",
+    "github": "https://github.com/awesomelistsio/awesome-audio-engineering",
+    "category": "Engineering",
+    "slug": "awesome-audio-engineering"
+  },
+  {
+    "name": "Awesome Flask",
+    "description": "A curated list of tools and extensions for the Flask web framework.",
+    "github": "https://github.com/awesomelistsio/awesome-flask",
+    "category": "Frameworks",
+    "slug": "awesome-flask"
+  },
+  {
+    "name": "Awesome Django",
+    "description": "A curated list of packages and resources for Django.",
+    "github": "https://github.com/awesomelistsio/awesome-django",
+    "category": "Frameworks",
+    "slug": "awesome-django"
+  },
+  {
+    "name": "Awesome Laravel",
+    "description": "A curated list of packages and ecosystem resources for Laravel.",
+    "github": "https://github.com/awesomelistsio/awesome-laravel",
+    "category": "Frameworks",
+    "slug": "awesome-laravel"
+  },
+  {
+    "name": "Awesome Rails",
+    "description": "A curated list of tools and resources for Ruby on Rails.",
+    "github": "https://github.com/awesomelistsio/awesome-rails/tree/main",
+    "category": "Frameworks",
+    "slug": "awesome-rails"
+  },
+  {
+    "name": "Awesome Angular",
+    "description": "A curated list of libraries and resources for Angular.",
+    "github": "https://github.com/awesomelistsio/awesome-angular",
+    "category": "Frameworks",
+    "slug": "awesome-angular"
+  },
+  {
+    "name": "Awesome Next.js",
+    "description": "A curated list of tools, templates, and resources for Next.js.",
+    "github": "https://github.com/awesomelistsio/awesome-next.js",
+    "category": "Frameworks",
+    "slug": "awesome-nextjs"
+  },
+  {
+    "name": "Awesome Lua",
+    "description": "A curated list of Lua libraries, tools, and game development resources.",
+    "github": "https://github.com/awesomelistsio/awesome-lua",
+    "category": "Gaming Development",
+    "slug": "awesome-lua"
+  },
+  {
+    "name": "Awesome Mathematics",
+    "description": "A curated list of resources for pure, applied, and computational mathematics.",
+    "github": "https://github.com/awesomelistsio/awesome-mathematics/tree/main",
+    "category": "Mathematics",
+    "slug": "awesome-mathematics"
+  },
+  {
+    "name": "Awesome APIs",
+    "description": "A curated list of high-quality APIs, SDKs, and developer tools.",
+    "github": "https://github.com/awesomelistsio/awesome-apis",
+    "category": "Platforms",
+    "slug": "awesome-apis"
+  },
+  {
+    "name": "Awesome Stripe",
+    "description": "A curated list of tools and integrations for building with Stripe.",
+    "github": "https://github.com/awesomelistsio/awesome-stripe",
+    "category": "Platforms",
+    "slug": "awesome-stripe"
+  },
+  {
+    "name": "Awesome GovTech",
+    "description": "A curated list of platforms and resources for digital government and public sector innovation.",
+    "github": "https://github.com/awesomelistsio/awesome-govtech",
+    "category": "Politics & Society",
+    "slug": "awesome-govtech"
+  },
+  {
+    "name": "Awesome Public Policy",
+    "description": "A curated list of institutions, datasets, and tools for public policy and governance.",
+    "github": "https://github.com/awesomelistsio/awesome-public-policy",
+    "category": "Politics & Society",
+    "slug": "awesome-public-policy"
+  },
+  {
+    "name": "Awesome C",
+    "description": "A curated list of C libraries, tools, and learning resources.",
+    "github": "https://github.com/awesomelistsio/awesome-c",
+    "category": "Programming Languages",
+    "slug": "awesome-c"
+  },
+  {
+    "name": "Awesome Fortran",
+    "description": "A curated list of tools and libraries for Fortran.",
+    "github": "https://github.com/awesomelistsio/awesome-fortran",
+    "category": "Programming Languages",
+    "slug": "awesome-fortran"
+  },
+  {
+    "name": "Awesome PHP",
+    "description": "A curated list of PHP frameworks, libraries, and best practices.",
+    "github": "https://github.com/awesomelistsio/awesome-php",
+    "category": "Programming Languages",
+    "slug": "awesome-php"
+  },
+  {
+    "name": "Awesome Zig",
+    "description": "A curated list of tools and learning resources for the Zig programming language.",
+    "github": "https://github.com/awesomelistsio/awesome-zig",
+    "category": "Programming Languages",
+    "slug": "awesome-zig"
+  },
+  {
+    "name": "Awesome MATLAB",
+    "description": "A curated list of tools and resources for MATLAB.",
+    "github": "https://github.com/awesomelistsio/awesome-matlab/tree/main",
+    "category": "Programming Languages",
+    "slug": "awesome-matlab"
+  },
+  {
+    "name": "Awesome Chemistry",
+    "description": "A curated list of resources for chemistry and materials science.",
+    "github": "https://github.com/awesomelistsio/awesome-chemistry",
+    "category": "Science",
+    "slug": "awesome-chemistry"
+  },
+  {
+    "name": "Awesome Physics",
+    "description": "A curated list of resources for physics research and education.",
+    "github": "https://github.com/awesomelistsio/awesome-physics",
+    "category": "Science",
+    "slug": "awesome-physics"
+  },
+  {
+    "name": "Awesome Web Development",
+    "description": "A curated list of frameworks, tools, and learning resources for modern web development.",
+    "github": "https://github.com/awesomelistsio/awesome-web-development",
+    "category": "Web Optimization",
+    "slug": "awesome-web-development"
   }
-];
-
-// ----- State -----
-const FAVORITES_KEY = "al_favorites_v1";
-const THEME_KEY = "al_theme";
-const state = {
-  query: "",
-  sort: "name", // name | updated (reserved)
-  selectedCategories: new Set(),
-  favorites: new Set(JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]")),
-  activeTab: "all" // all | favourites
-};
-
-// ----- Elements -----
-const $year = document.getElementById("year");
-const $search = document.getElementById("search");
-const $sort = document.getElementById("sort");
-const $clearFilters = document.getElementById("clearFilters");
-const $categories = document.getElementById("categories");
-const $tabAll = document.getElementById("tabAll");
-const $tabFav = document.getElementById("tabFav");
-const $grid = document.getElementById("grid");
-const $empty = document.getElementById("empty");
-const $modeToggle = document.getElementById("modeToggle");
-const $modeIcon = document.getElementById("modeIcon");
-$year.textContent = new Date().getFullYear();
-
-// ----- Theme -----
-function applySavedTheme() {
-  const saved = localStorage.getItem(THEME_KEY);
-  if (saved === "dark") {
-    document.documentElement.classList.add("dark");
-    $modeIcon.textContent = "☀️";
-    $modeToggle.lastElementChild.textContent = "Light";
-  } else {
-    document.documentElement.classList.remove("dark");
-    $modeIcon.textContent = "🌙";
-    $modeToggle.lastElementChild.textContent = "Dark";
-  }
-}
-applySavedTheme();
-$modeToggle.addEventListener("click", () => {
-  const isDark = document.documentElement.classList.toggle("dark");
-  localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
-  applySavedTheme();
-});
-
-// ----- Helpers -----
-const toast = (msg => {
-  let t, el;
-  return (m) => {
-    clearTimeout(t);
-    if (!el) {
-      el = document.createElement("div");
-      el.id = "toaster";
-      el.className = "fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-black/70 text-white text-sm";
-      document.body.appendChild(el);
-    }
-    el.textContent = m;
-    el.style.opacity = "1";
-    t = setTimeout(() => el.style.opacity = "0", 1400);
-  };
-})();
-
-async function shareLink(title, url) {
-  try {
-    if (navigator.share) return void (await navigator.share({ title, url }));
-  } catch {}
-  try {
-    await navigator.clipboard.writeText(url);
-    toast("Link copied to clipboard");
-  } catch {
-    toast("Could not share: your browser blocked it");
-  }
-}
-
-// ----- Categories -----
-const categories = [...new Set(SEED_LISTS.map(l => l.category))].sort();
-function renderCategoryChips() {
-  $categories.innerHTML = "";
-  categories.forEach(cat => {
-    const active = state.selectedCategories.has(cat);
-    const btn = document.createElement("button");
-    btn.className = `px-3 py-1 rounded-full text-sm border ${active ? "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-200 dark:border-emerald-800" : "border-slate-300 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800"}`;
-    btn.textContent = cat;
-    btn.addEventListener("click", () => {
-      if (state.selectedCategories.has(cat)) state.selectedCategories.delete(cat);
-      else state.selectedCategories.add(cat);
-      render();
-    });
-    $categories.appendChild(btn);
-  });
-}
-
-// ----- Filters & Sorting & Search -----
-$search.addEventListener("input", e => { state.query = e.target.value.trim().toLowerCase(); render(); });
-$sort.addEventListener("change", e => { state.sort = e.target.value; render(); });
-$clearFilters.addEventListener("click", () => {
-  state.selectedCategories.clear(); state.query = ""; state.sort = "name";
-  $search.value = ""; $sort.value = "name"; render();
-});
-
-// ----- Tabs -----
-function setActiveTab(tab) {
-  state.activeTab = tab;
-  [$tabAll, $tabFav].forEach(b => b.classList.remove("bg-slate-100","dark:bg-slate-700/60"));
-  (tab === "all" ? $tabAll : $tabFav).classList.add("bg-slate-100","dark:bg-slate-700/60");
-  render();
-}
-$tabAll.addEventListener("click", () => setActiveTab("all"));
-$tabFav.addEventListener("click", () => setActiveTab("favourites"));
-
-// ----- Render -----
-function render() {
-  renderCategoryChips();
-
-  const q = state.query;
-  let items = SEED_LISTS.filter(l => {
-    const matchesQuery = !q || [l.name, l.description].join(" ").toLowerCase().includes(q);
-    const matchesCategory = state.selectedCategories.size === 0 || state.selectedCategories.has(l.category);
-    const matchesTab = state.activeTab === "all" || state.favorites.has(l.slug);
-    return matchesQuery && matchesCategory && matchesTab;
-  });
-
-  switch (state.sort) {
-    case "name": items.sort((a, b) => a.name.localeCompare(b.name)); break;
-    case "updated": items.sort((a,b) => a.name.localeCompare(b.name)); break;
-    default: items.sort((a, b) => a.name.localeCompare(b.name));
-  }
-
-  $grid.innerHTML = "";
-  if (!items.length) return void $empty.classList.remove("hidden"); else $empty.classList.add("hidden");
-
-  items.forEach(l => {
-    const isFav = state.favorites.has(l.slug);
-    const card = document.createElement("div");
-    card.className = "card h-full dark:shadow-none";
-    card.innerHTML = `
-      <div class="p-5">
-        <div class="flex items-start justify-between gap-2">
-          <h3 class="text-lg leading-tight font-semibold">${l.name}</h3>
-          <span class="badge">${l.category}</span>
-        </div>
-        <p class="mt-3 text-sm text-slate-700 leading-relaxed dark:text-slate-300">${l.description}</p>
-        <div class="mt-5 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <button class="btn fav-btn ${isFav ? 'ring-1 ring-emerald-200' : ''}" data-slug="${l.slug}" aria-pressed="${isFav}">
-              ${isFav ? '<svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/></svg>' :
-                         '<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15 9 22 9 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9 9 9 12 2"/></svg>'}
-              <span>${isFav ? 'Favourited' : 'Favourite'}</span>
-            </button>
-            <button class="btn btn-ghost share-btn" data-title="${encodeURIComponent(l.name)}" data-url="${encodeURIComponent(l.github)}">
-              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51L8.59 10.49"/></svg>
-              <span>Share</span>
-            </button>
-          </div>
-          <a class="btn btn-primary" href="${l.github}" target="_blank" rel="noreferrer">
-            <svg class="h-4 w-4" role="img" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 0 0-3.79 23.39c.6.111.82-.26.82-.577v-2.02c-3.338.726-4.042-1.61-4.042-1.61-.546-1.389-1.333-1.76-1.333-1.76-1.09-.745.083-.73.083-.73 1.204.084 1.84 1.237 1.84 1.237 1.072 1.836 2.813 1.305 3.5.998.108-.777.42-1.305.763-1.605-2.665-.304-5.466-1.333-5.466-5.932 0-1.31.469-2.382 1.236-3.222-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 6.004 0c2.292-1.552 3.299-1.23 3.299-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.625-5.477 5.922.431.372.815 1.103.815 2.223v3.293c0 .319.218.693.825.576A12 12 0 0 0 12 .297z"/></svg>
-            <span>GitHub</span>
-          </a>
-        </div>
-      </div>
-    `;
-
-    card.querySelector(".fav-btn").addEventListener("click", (e) => {
-      const slug = e.currentTarget.getAttribute("data-slug");
-      if (state.favorites.has(slug)) state.favorites.delete(slug);
-      else state.favorites.add(slug);
-      localStorage.setItem(FAVORITES_KEY, JSON.stringify([...state.favorites]));
-      render();
-    });
-    card.querySelector(".share-btn").addEventListener("click", (e) => {
-      const title = decodeURIComponent(e.currentTarget.getAttribute("data-title"));
-      const url = decodeURIComponent(e.currentTarget.getAttribute("data-url"));
-      shareLink(title, url);
-    });
-    $grid.appendChild(card);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  render();
-});
+]

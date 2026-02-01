@@ -1,0 +1,14 @@
+title: Awesome Lists
+description: "A growing collection of curated awesome lists covering programming, AI, science, sustainability, digital rights, and beyond."
+url: "https://www.awesomelists.io"
+baseurl: ""
+timezone: America/Toronto
+
+# GitHub Pages compatible plugins (safe list)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+permalink: pretty

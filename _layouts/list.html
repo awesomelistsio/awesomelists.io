@@ -1,0 +1,163 @@
+---
+layout: default
+---
+<div class="max-w-4xl">
+  <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+    <div>
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="mt-2 text-slate-600 leading-relaxed dark:text-slate-300">{{ page.description }}</p>
+      {% endif %}
+      <div class="mt-3 flex flex-wrap items-center gap-2 text-sm">
+        <span class="inline-flex items-center rounded-full bg-emerald-600/10 px-2 py-0.5 text-xs text-emerald-800 ring-1 ring-emerald-700/20 dark:text-emerald-200">{{ page.category }}</span>
+        <a class="text-emerald-700 hover:underline dark:text-emerald-300" href="{{ page.github }}" target="_blank" rel="noreferrer">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <button id="refreshReadme" class="rounded-lg border border-slate-300 px-3 py-2 text-sm hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">Refresh</button>
+      <button id="copyLink" class="rounded-lg border border-slate-300 px-3 py-2 text-sm hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">Copy link</button>
+    </div>
+  </div>
+
+  <div class="mt-8 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-card dark:bg-slate-900/40 dark:ring-slate-800">
+    <div id="readmeStatus" class="text-sm text-slate-600 dark:text-slate-300"></div>
+    <div id="readme" class="prose prose-slate max-w-none mt-4 dark:prose-invert"></div>
+
+    <div id="readmeFallback" class="hidden mt-4 text-sm text-slate-600 dark:text-slate-300">
+      We couldn’t load the README right now. You can still open it directly on GitHub:
+      <a class="text-emerald-700 hover:underline dark:text-emerald-300" href="{{ page.github }}" target="_blank" rel="noreferrer">{{ page.github }}</a>
+    </div>
+  </div>
+
+  <div class="mt-8 text-sm text-slate-600 dark:text-slate-300">
+    <a class="hover:underline" href="{{ '/' | relative_url }}">← Back to all lists</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+
+<script>
+(function() {
+  const slug = {{ page.slug | jsonify }};
+  const github = {{ page.github | jsonify }};
+  const cacheKey = `awesomelists_readme_${slug}`;
+  const ttlMs = 24 * 60 * 60 * 1000; // 24h
+
+  const $status = document.getElementById('readmeStatus');
+  const $readme = document.getElementById('readme');
+  const $fallback = document.getElementById('readmeFallback');
+  const $refresh = document.getElementById('refreshReadme');
+  const $copy = document.getElementById('copyLink');
+
+  function setStatus(html) { if ($status) $status.innerHTML = html; }
+  function showFallback(show) { if ($fallback) $fallback.classList.toggle('hidden', !show); }
+
+  function parseRepo(url) {
+    const m = String(url).match(/^https?:\/\/github\.com\/([^\/]+)\/([^\/]+)(?:\/|$)/i);
+    if (!m) return null;
+    return { owner: m[1], repo: m[2].replace(/\.git$/i, '') };
+  }
+
+  function formatDate(ts) {
+    try { return new Date(ts).toLocaleString(undefined, { year:'numeric', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }); }
+    catch { return ''; }
+  }
+
+  function readCache() {
+    try {
+      const raw = localStorage.getItem(cacheKey);
+      if (!raw) return null;
+      const obj = JSON.parse(raw);
+      if (!obj || !obj.md) return null;
+      return obj;
+    } catch { return null; }
+  }
+
+  function writeCache(md) {
+    try {
+      localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), md }));
+    } catch {}
+  }
+
+  function renderMarkdown(md) {
+    const html = marked.parse(md, { mangle: false, headerIds: true });
+    $readme.innerHTML = DOMPurify.sanitize(html, { USE_PROFILES: { html: true } });
+  }
+
+  async function fetchReadme(opts) {
+    const force = !!(opts && opts.force);
+    showFallback(false);
+
+    const cached = readCache();
+    const fresh = cached && (Date.now() - cached.ts) < ttlMs;
+
+    if (!force && fresh) {
+      setStatus(`Showing cached version from <strong>${formatDate(cached.ts)}</strong>.`);
+      renderMarkdown(cached.md);
+      return;
+    }
+
+    if (cached && !fresh) setStatus(`Refreshing… (last cached <strong>${formatDate(cached.ts)}</strong>)`);
+    else setStatus('Loading README…');
+
+    const repo = parseRepo(github);
+    if (!repo) {
+      setStatus('Could not parse GitHub repository URL.');
+      showFallback(true);
+      return;
+    }
+
+    const candidates = [
+      `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/main/README.md`,
+      `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/main/readme.md`,
+      `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/master/README.md`,
+      `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/master/readme.md`
+    ];
+
+    let lastErr = null;
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) { lastErr = new Error(`${res.status} ${res.statusText}`); continue; }
+        const md = await res.text();
+        if (!md || md.trim().length === 0) { lastErr = new Error('Empty README'); continue; }
+
+        writeCache(md);
+        setStatus(`Loaded live from GitHub. Cached <strong>${formatDate(Date.now())}</strong>.`);
+        renderMarkdown(md);
+        return;
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+
+    if (cached && cached.md) {
+      setStatus(`Couldn’t load live README (rate-limited or unavailable). Showing cached version from <strong>${formatDate(cached.ts)}</strong>.`);
+      renderMarkdown(cached.md);
+      return;
+    }
+
+    setStatus(`Couldn’t load README right now. (${(lastErr && lastErr.message) ? lastErr.message : 'Unknown error'})`);
+    showFallback(true);
+  }
+
+  if ($copy) {
+    $copy.addEventListener('click', async () => {
+      const url = new URL(`/lists/${slug}/`, window.location.origin).href;
+      try {
+        await navigator.clipboard.writeText(url);
+        setStatus('Link copied to clipboard.');
+      } catch {
+        setStatus('Could not copy link (browser blocked clipboard).');
+      }
+    });
+  }
+
+  if ($refresh) $refresh.addEventListener('click', () => fetchReadme({ force: true }));
+
+  fetchReadme();
+})();
+</script>
