@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Welcome to the Awesome Lists blog"
-description: "Why we added a blog, what it covers, and how it supports better discovery across curated awesome lists."
+title: "Welcome to the Awesome Lists Blog"
+description: "Why we added a blog, what it covers, and how it improves discovery across curated awesome lists, categories, and open-source resources."
 date: 2026-01-31 09:00:00 -0500
 tags: [Updates, Meta]
 ---
