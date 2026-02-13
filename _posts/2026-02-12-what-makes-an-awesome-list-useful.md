@@ -34,8 +34,6 @@ If even one of these is missing, the list becomes harder to use.
 
 Let’s examine each in detail.
 
----
-
 ## 1. Clear Scope and Defined Boundaries
 
 A useful awesome list begins with boundaries.
